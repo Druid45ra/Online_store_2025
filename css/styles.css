@@ -1,0 +1,28 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #f8f9fa;
+    padding: 10px 0;
+}
+
+.form-inline {
+    margin-left: auto;
+}
+
+.form-inline input[type="search"] {
+    width: 200px;
+}
