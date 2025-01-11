@@ -14,7 +14,11 @@ $options = [
 
 try {
     $pdo = new PDO($dsn, $user, $pass, $options);
+    // Mesaj de confirmare în cazul unei conexiuni reușite
+    echo "Conexiune la baza de date realizată cu succes!";
 } catch (\PDOException $e) {
-    throw new \PDOException($e->getMessage(), (int)$e->getCode());
+    // Afișare mesaj de eroare pentru utilizator
+    echo "Eroare la conectarea la baza de date: " . $e->getMessage();
+    exit;
 }
 ?>
